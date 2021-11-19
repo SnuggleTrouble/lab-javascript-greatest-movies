@@ -75,7 +75,7 @@ function orderAlphabetically(movies) {
       return 0;
     }
   });
-  return alphabeticalOrder.slice(0, 20);
+  return alphabeticalOrder.map(element => element.title).slice(0, 20);
 };
 
 // BONUS - Iteration 7: Time Format - Turn duration of the movies from hours to minutes
