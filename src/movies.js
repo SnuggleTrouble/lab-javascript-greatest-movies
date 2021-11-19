@@ -4,7 +4,7 @@
 function getAllDirectors(movies) {
   const allDirectors = movies.map(element => element.director);
   return allDirectors;
-}
+};
 
 // Iteration 2: Steven Spielberg. The best? - How many drama movies did STEVEN SPIELBERG direct?
 function howManyMovies(movies) {
@@ -12,9 +12,9 @@ function howManyMovies(movies) {
     if (element.director === "Steven Spielberg" && element.genre.includes("Drama")) {
       return element;
     }
-  })
+  });
   return spielbergDramas.length;
-}
+};
 
 // Iteration 3: All scores average - Get the average of all scores with 2 decimals
 function scoresAverage(movies) {
@@ -27,10 +27,10 @@ function scoresAverage(movies) {
     } else {
       return accumulator += 0;
     }
-  }, 0)
+  }, 0);
   const result = averageScore / movies.length;
   return Math.round(result * 100) /100;
-}
+};
 
 // Iteration 4: Drama movies - Get the average of Drama Movies
 function dramaMoviesScore(movies) {
@@ -40,7 +40,7 @@ function dramaMoviesScore(movies) {
     }
   });
   return scoresAverage(dramaMovies);
-}
+};
 
 // Iteration 5: Ordering by year - Order by year, ascending (in growing order)
 function orderByYear(movies) {
@@ -62,7 +62,6 @@ function orderByYear(movies) {
   return numericalOrder;
 };
   
-
 // Iteration 6: Alphabetic Order - Order by title and print the first 20 titles
 function orderAlphabetically(movies) {
   const moviesArrayCopy = [...movies];
@@ -83,7 +82,6 @@ function turnHoursToMinutes() {}
 
 // BONUS - Iteration 8: Best yearly score average - Best yearly score average
 function bestYearAvg() {}
-
 
 
 // The following is required to make unit tests work.
